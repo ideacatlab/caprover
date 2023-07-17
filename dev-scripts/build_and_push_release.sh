@@ -16,7 +16,7 @@ else
     echo "Running on CI"
 fi
 
-IMAGE_NAME=caprover/caprover
+IMAGE_NAME=razvanrun/caprover
 
 if [ ! -f ./package-lock.json ]; then
     echo "package-lock.json not found!"
@@ -27,8 +27,8 @@ fi
 # On Github the line above does not work, instead:
 BRANCH=${GITHUB_REF##*/}
 echo "on branch $BRANCH"
-if [[ "$BRANCH" != "release" ]]; then
-    echo 'Not on release branch! Aborting script!'
+if [[ "$BRANCH" != "master" ]]; then
+    echo 'Not on master branch! Aborting script!'
     exit 1
 fi
 
