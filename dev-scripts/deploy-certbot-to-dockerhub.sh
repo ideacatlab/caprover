@@ -3,7 +3,7 @@
 CERTBOT_VERSION_DOCKERFILE="v1.5.0"
 
 
-SLEEPING_CERT_BOT_IMAGE_NAME="caprover/certbot-sleeping"
+SLEEPING_CERT_BOT_IMAGE_NAME="razvanrun/certbot-sleeping"
 
 echo "Deploying to Docker hub - certbot version: $CERTBOT_VERSION_DOCKERFILE"
 
