@@ -3,7 +3,7 @@ name: Build and push the edge image
 on:
     push:
         branches:
-            - master
+            - edge
 
 jobs:
     run-pre-checks:
